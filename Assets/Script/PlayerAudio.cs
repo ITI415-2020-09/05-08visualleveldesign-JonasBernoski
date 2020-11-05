@@ -14,7 +14,7 @@ public class PlayerAudio : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Door"))
+        if (other.CompareTag("Ball"))
         {
             Step.PlayOneShot(Footstep01);
         }
@@ -25,7 +25,7 @@ public class PlayerAudio : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Door"))
+        if (other.CompareTag("Ball"))
         {
             Step.PlayOneShot(Footstep01);
         }
